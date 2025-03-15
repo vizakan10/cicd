@@ -950,6 +950,8 @@ def play_game():
     # Save progress after each attempt
     collection.update_one({'email': email}, {'$set': {
         'attempts': attempts,
+
+        
         'lives': lives,
         'total_score': total_score,
         'level': level,
